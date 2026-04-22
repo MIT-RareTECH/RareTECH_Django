@@ -82,6 +82,7 @@ DATABASES = {
         'USER': os.environ.get('MYSQL_USER'),
         'PASSWORD': os.environ.get('MYSQL_PASSWORD'),
         'HOST': 'db', #docker compose.ymlのサービス名
+        'books':
     }
 }
 
