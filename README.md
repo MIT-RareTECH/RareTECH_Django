@@ -4,3 +4,6 @@ Vscodeが保存できない場合
 sudo chown -R $(whoami):$(whoami) .
 chmod -R u+rwX .
 で変更可能
+
+11
+
