@@ -1,3 +1,10 @@
 from django.contrib import admin
+from .models import Book
 
-# Register your models here.
+
+@admin.register(Book)
+class BookAdmin(admin.ModelAdmin):
+    list_display = ('title', 'author', 'genre', 'created_at')
+    list_filter = ('genre',)
+    search_fields = ('title', 'author')
+
